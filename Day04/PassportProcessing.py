@@ -2,7 +2,9 @@
 import sys
 import re
 
-lines = open(sys.argv[1], 'r').readlines()
+file = open(sys.argv[1], 'r')
+lines = file.readlines()
+
 validKeys = 0
 validValues = 0
 passport = {}
@@ -83,3 +85,4 @@ validKeys, validValues = validateAndCountPassport(passport, validKeys, validValu
 print("Passports with valid keys: {}".format(validKeys))
 print("Valid passports: {}".format(validValues))
 
+file.close()
