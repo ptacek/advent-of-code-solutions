@@ -3,7 +3,8 @@ import sys
 
 TARGET_VALUE = 2020
 
-input = open(sys.argv[1], 'r').readlines()
+file = open(sys.argv[1], 'r')
+input = file.readlines()
 total = len(input)
 
 for i in range(0, total):
@@ -26,4 +27,4 @@ for i in range(0, total):
                 print("{} * {} * {} = {}".format(firstNum, secondNum, thirdNum, firstNum * secondNum * thirdNum))
                 exit(0)
 
-exit(1)
+file.close()

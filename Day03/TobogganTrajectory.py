@@ -1,7 +1,8 @@
 # https://adventofcode.com/2020/day/3
 import sys
 
-lines = open(sys.argv[1], 'r').readlines()
+file = open(sys.argv[1], 'r')
+lines = file.readlines()
 grid = []
 
 for line in lines:
@@ -32,3 +33,4 @@ for comb in combinations:
     print("Number of trees ({}, {}): {}".format(comb[0], comb[1], trees))
 
 print("Product of results: {}".format(product))
+file.close()

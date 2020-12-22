@@ -12,11 +12,12 @@ def policyCheckOne(min, max, char, passwd):
 def policyCheckTwo(first, second, char, passwd):
     return (passwd[first - 1] == char) ^ (passwd[second - 1] == char)
 
-input = open(sys.argv[1], 'r').readlines()
+input = open(sys.argv[1], 'r')
+lines = input.readlines()
 validCountPartOne = 0
 validCountPartTwo = 0
 
-for line in input:
+for line in lines:
     match = re.search('^([0-9]+)-([0-9]+) (.): ([a-z]+)$', line.strip())
     first = int(match.group(1))
     second = int(match.group(2))
@@ -31,3 +32,5 @@ for line in input:
 
 print("Part one valid count: {}".format(validCountPartOne))
 print("Part two valid count: {}".format(validCountPartTwo))
+
+input.close()
