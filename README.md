@@ -1,3 +1,3 @@
-My solutions of programming puzzles from Advent of code 2020
+My solutions of programming puzzles from Advent of code
 
 https://adventofcode.com/
