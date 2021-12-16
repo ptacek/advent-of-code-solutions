@@ -1,4 +1,4 @@
-#https://adventofcode.com/2021/day/13
+#https://adventofcode.com/2021/day/14
 import sys
 
 # NOTE: This version is not good enough for the second part of the puzzle (running 40 steps)
